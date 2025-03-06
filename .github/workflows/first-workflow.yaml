@@ -1,12 +1,13 @@
-name: first-version-control-workflow
+name: version-control-workflow
 on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello Running
-        run: |
-          echo "Hello, world!"
-          ls -ltra
+      # - name: Checkout code
+      #   uses: actions/checkout@v4
+        
+      - name: Read hello.txt file
+        run: cat hello.txt
 
