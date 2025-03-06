@@ -5,6 +5,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
-        run: echo "Hello, world!"
+      - name: Hello Running
+        run: |
+          echo "Hello, world!"
+          ls -ltra
 
